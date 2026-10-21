@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alpha Mukumba's- Brain Game</title>
+  <link rel="stylesheet" href="Mk.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 id="game-title">Memory Flip</h1>
+      <p id="game-subtitle">Match all pairs to win!</p>
+    </header>
+    <div class="stats">
+      <div class="stat-box">Moves: <span id="moves">0</span></div>
+      <div class="stat-box">Time: <span id="timer">00:00</span></div>
+      <div class="stat-box">Best: <span id="best">--</span></div>
+    </div>
+    <div class="board" id="board"></div>
+    <div class="controls">
+      <button id="restart-btn">Restart Game</button>
+      <select id="difficulty">
+        <option value="easy">Easy (4x3)</option>
+        <option value="medium" selected>Medium (4x4)</option>
+        <option value="hard">Hard (6x4)</option>
+      </select>
+    </div>
+    <div class="win-modal hidden" id="win-modal">
+      <div class="modal-content">
+        <h2>🎉 You Won!</h2>
+        <p>You finished in <span id="final-moves"></span> moves</p>
+        <p>Time: <span id="final-time"></span></p>
+        <button id="play-again">Play Again</button>
+      </div>
+    </div>
+    <footer><p id="footer-text">Made for Hackclub Project - 2026</p></footer>
+  </div>
+  <script src="Mk (1).js"></script>
+</body>
+</html>
